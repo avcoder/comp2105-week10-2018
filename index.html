@@ -271,6 +271,68 @@
 
       <section>
         <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter size-100">
+          <h2>How to detect scrolling in js?
+          </h2>
+
+          <p>
+            <a href="./js30.html">View slide scrolling in action using old way</a>
+          </p>
+          <pre><code>
+function checkSlide() {
+  sliderImages.forEach(sliderImage => {
+    // half way through the image
+    const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+    // bottom of the image
+    const imageBottom = sliderImage.offsetTop + sliderImage.height;
+    const isHalfShown = slideInAt > sliderImage.offsetTop;
+    const isNotScrolledPast = window.scrollY < imageBottom;
+    if (isHalfShown && isNotScrolledPast) {
+      sliderImage.classList.add('active');
+    } else {
+      sliderImage.classList.remove('active');
+    }
+  });
+}
+            </code></pre>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter size-100">
+          <h3>
+            <a href="https://twitter.com/wesbos/status/915304495902535685?lang=en">new IntersectionObserver</a>
+          </h3>
+          <pre><code>
+const options = { threshold: [0, 0.5, 1.0] } // off, half, and totally on
+
+const callback = (entries, observer) => {
+  entries.forEach(entry => {
+    // only using threshold of 1 here 
+    if (entry.isIntersecting && entry.intersectionRatio >= 1) {
+      entry.target.classList.add('visible'); // css will animate it in
+    } else {
+      entry.target.classList.remove('visible');
+    }
+  });
+}
+
+const observer = new IntersectionObserver(callback, options);
+
+const boxes = document.querySelectorAll('.box');
+boxes.forEach(box => observer.observe(box));
+              </code></pre>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
         <div class="wrap size-50 aligncenter">
           <h2>
             <strong>Summary:</strong>
@@ -331,9 +393,9 @@
 
         </div>
         <ol>
-          <li>Advanced SVG Animation with Sarah Drasner http://lynda.com</li>
-          <li>Creating an HTML5 Banner ad with Greensock (GSAP) with Chris Converse</li>
-          <li>https://greensock.com/position-parameter</li>
+          <li>
+            <a href="https://github.com/wesbos/JavaScript30/tree/master/13%20-%20Slide%20in%20on%20Scroll">Reference: javascript30.com</a>
+          </li>
           <li></li>
           <li></li>
           <li></li>
