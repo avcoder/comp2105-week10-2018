@@ -175,8 +175,8 @@
                 <p>Recognize the main user interface components and their purposes</p>
               </li>
               <li>
-                <h2>Make it move</h2>
-                <p>Produce a simple web page that includes a variety motion-based effects</p>
+                <h2>Timeline</h2>
+                <p>Animate elements based on the timeline</p>
               </li>
               <li>
                 <h2>Generated code</h2>
@@ -199,8 +199,10 @@
             <li>
               <img src="./static/images/aea.png" alt="Adobe Edge Animate CC">
             </li>
-            <li>
-              <img src="./static/images/aa.png" alt="Adobe Animate CC">
+            <li style="transform: rotate(3deg);">
+              <a href="https://www.youtube.com/watch?v=txCssT1iRL4">
+                <img src="./static/images/aa.png" alt="Adobe Animate CC">
+              </a>
             </li>
             <li>
               <img src="./static/images/gwd.png" alt="Google Web Designer">
@@ -253,18 +255,22 @@
               <div>
                 <h1>Styles</h1>
                 <img src="./static/images/panels.png" alt="Webflow's Styles tab">
+                <p class="text-intro">This is where you can adjust any CSS property, notably transforms and transitions.</p>
               </div>
             </li>
             <li>
               <div>
                 <h1>Navigator</h1>
                 <img src="./static/images/panels2.png" alt="Webflow's Navigator tab">
+                <p class="text-intro">This is where you can view the HTML structure. Use this when you want to insert a new HTML element with greater
+                  precision rather than dragging a new element onto the page</p>
               </div>
             </li>
             <li>
               <div>
                 <h1>Interactions</h1>
                 <img src="./static/images/panels3.png" alt="Webflow's Interactions tab">
+                <p class="text-intro">Insert animations based on a trigger</p>
               </div>
             </li>
           </ul>
@@ -273,10 +279,86 @@
       </section>
 
       <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h1>2D</h1>
+          <p class="text-intro">(remember this Week 3 slide?)</p>
+
+          <h2>
+            transform: scale();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <svg class="fa-arrows-alt">
+              <use xlink:href="#fa-arrows-alt"></use>
+            </svg>
+          </h2>
+          <h2>
+            transform: skew();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <svg class="fa-eraser">
+              <use xlink:href="#fa-eraser"></use>
+            </svg>
+          </h2>
+          <h2>
+            transform: translate();
+            <svg class="fa-exchange">
+              <use xlink:href="#fa-exchange"></use>
+            </svg>
+          </h2>
+          <h2>
+            transform: rotate();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <svg class="fa-refresh">
+              <use xlink:href="#fa-refresh"></use>
+            </svg>
+          </h2>
+          <br>
+          <hr>
+          <div class="bg-apple wrap">
+            <ul class="flexblock features">
+              <li>1. Add a transform move and skew upon clicking an image within Webflow</li>
+              <li>2. Add a transform rotate and scale upon hovering over a button</li>
+              <li>3. Add an opacity change as well</li>
+            </ul>
+          </div>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <p class="text-intro">(remember this week 4 slide?)</p>
+          <code>
+            <h2>transition: color 2s ease-in 0.5s;</h2>
+          </code>
+          <br>
+          <br>
+          <p class="text-intro">Implement the above transition on the button in Webflow</p>
+        </div>
+
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h2>
+            <code>@keyframes animation</code>
+          </h2>
+          <p>(remember this Week 5 slide?)</p>
+
+          <img src="./static/images/animation.png" alt="sample code using animation and keyframes" style="width: 500px;">
+
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
+      <section class="bg-apple">
         <div class="wrap">
           <div class="content-left">
             <h3>
-              Slide on scroll
+              Online Exercise: Slide on scroll
             </h3>
             <p>
               <a href="https://www.youtube.com/watch?v=-U0IXSmp6kc#t=1m17s">Forward to 1:17</a>
@@ -301,6 +383,33 @@
         <!-- .end .wrap -->
       </section>
 
+      <section class="bg-secondary">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 frame">
+          <h2 class="text-serif aligncenter">
+            Submit Online Exercise + Break
+            <br /> (5 mins) + (15mins)
+          </h2>
+          <p class="aligncenter">
+            <a href="http://avillaruz.computerstudi.es/comp2105/index.html">Start timer</a>
+          </p>
+          <p class="text-symbols">* * *</p>
+          <h4>More Stuff</h4>
+
+          <ul>
+            <li>
+              <a href="https://hacks.mozilla.org/category/code-cartoons/">Lin Clark's cartoon explanations of coding concepts</a>
+            </li>
+            <li>
+              <a href="https://www.michaelcrump.net/azure-tips-and-tricks-complete-list/?WT.mc_id=online-social-sdras">Azure tips and tricks</a>
+            </li>
+            <li>
+              <a href="https://www.smashingmagazine.com/2018/03/web-midi-api/">Web MIDI API</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
@@ -318,30 +427,34 @@
 
       <section>
         <!--.wrap = container (width: 90%) -->
-        <div class="wrap aligncenter size-100">
+        <div class="wrap aligncenter size-60">
           <h2>How to detect scrolling in js?
           </h2>
 
           <p>
             <a href="./js30.html">View slide scrolling in action using old way</a>
           </p>
-          <pre><code>
-function checkSlide() {
-  sliderImages.forEach(sliderImage => {
-    // half way through the image
-    const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
-    // bottom of the image
-    const imageBottom = sliderImage.offsetTop + sliderImage.height;
-    const isHalfShown = slideInAt > sliderImage.offsetTop;
-    const isNotScrolledPast = window.scrollY < imageBottom;
-    if (isHalfShown && isNotScrolledPast) {
-      sliderImage.classList.add('active');
-    } else {
-      sliderImage.classList.remove('active');
-    }
-  });
-}
-            </code></pre>
+          <pre><code><h5>
+
+sliderImages.forEach(sliderImage => {
+
+  // half way through the image
+  const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+
+  // bottom of the image
+  const imageBottom = sliderImage.offsetTop + sliderImage.height;
+  const isHalfShown = slideInAt > sliderImage.offsetTop;
+  const isNotScrolledPast = window.scrollY < imageBottom;
+
+  if (isHalfShown && isNotScrolledPast) {
+    sliderImage.classList.add('active');
+
+  } else {
+    sliderImage.classList.remove('active');
+  }
+});
+
+</h5></code></pre>
 
         </div>
         <!-- .end .wrap -->
@@ -349,11 +462,11 @@ function checkSlide() {
 
       <section>
         <!--.wrap = container (width: 90%) -->
-        <div class="wrap aligncenter size-100">
+        <div class="wrap aligncenter size-50">
           <h3>
             <a href="https://twitter.com/wesbos/status/915304495902535685?lang=en">new IntersectionObserver</a>
           </h3>
-          <pre><code>
+          <pre><code><h5>
 const options = { threshold: [0, 0.5, 1.0] } // off, half, and totally on
 
 const callback = (entries, observer) => {
@@ -371,11 +484,52 @@ const observer = new IntersectionObserver(callback, options);
 
 const boxes = document.querySelectorAll('.box');
 boxes.forEach(box => observer.observe(box));
-              </code></pre>
+</h5></code></pre>
 
         </div>
         <!-- .end .wrap -->
       </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h1>3D</h1>
+          <p class="text-intro">(remember this week 3 slide?)</p>
+          <br>
+
+          <h2>
+            perspective
+          </h2>
+          <h2>
+            perspective-origin
+          </h2>
+          <h2>
+            transform: rotate3d();
+          </h2>
+          <br>
+          <br>
+          <p class="text-intro">Implement a 3D transform on some text to make it look like Star Wars intro</p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       <section>
@@ -388,10 +542,10 @@ boxes.forEach(box => observer.observe(box));
           <div class="bg-white shadow">
             <ul class="flexblock reasons">
               <li>
-                We were introduced to one or more popular web animation software packages
+                We experienced a web animation platform that enabled us to easily build motion-graphics-based interactive components
               </li>
               <li>
-                We experienced a variety of different tools that enabled us to easily build motion-graphics-based interactive components
+                Manipulated HTML elements based on a timeline
               </li>
               <li>
                 We also observed the rather heavy (but standards-based and open) code that these tools produced.
