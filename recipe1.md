@@ -30,6 +30,7 @@
 * Add new scroll animation by clicking + sign
 * For 0% make both headings translateX of 0 and opacity of 1
 * For 100% move both headings outward, and opacity of 0
-* Adjust 100% to around 25% to see effect sooner
+* Adjust opacity from 100% to around 25% to see effect sooner
+* Experiment with smoothing parameter
 
 
